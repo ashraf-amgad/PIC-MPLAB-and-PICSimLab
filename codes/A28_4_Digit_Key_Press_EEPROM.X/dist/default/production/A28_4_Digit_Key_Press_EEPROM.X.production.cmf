@@ -1,0 +1,587 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+cinit CODE 0 7E8 7E8 18 2
+text1 CODE 0 569 569 59 2
+text2 CODE 0 5C2 5C2 67 2
+text3 CODE 0 515 515 1E 2
+text4 CODE 0 533 533 36 2
+text5 CODE 0 4D8 4D8 10 2
+text6 CODE 0 4A0 4A0 9 2
+text7 CODE 0 497 497 9 2
+text8 CODE 0 4FB 4FB 1A 2
+text9 CODE 0 4A9 4A9 A 2
+text10 CODE 0 4CB 4CB D 2
+text11 CODE 0 491 491 6 2
+text12 CODE 0 4BE 4BE D 2
+maintext CODE 0 629 629 1BF 2
+cstackCOMMON COMMON 1 70 70 A 1
+cstackBANK0 BANK0 1 2B 2B 7 1
+inittext CODE 0 4E8 4E8 13 2
+bssBANK0 BANK0 1 32 32 6 1
+idataBANK0 CODE 0 4B3 4B3 B 2
+dataBANK0 BANK0 1 20 20 B 1
+config CONFIG 4 2007 2007 1 2
+$C:\Users\Louda\AppData\Local\Temp\s95c.o
+end_init CODE 0 0 0 3 2
+config CONFIG 4 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 38-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 38-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-490 2
+CONST 800-1FFF 2
+ENTRY 3-490 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-490 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7A-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-490 2
+STRCODE 800-1FFF 2
+STRING 3-490 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+7E8 cinit CODE >683:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7E8 cinit CODE >686:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7E8 cinit CODE >754:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7E9 cinit CODE >755:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7EA cinit CODE >756:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7EB cinit CODE >757:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7EC cinit CODE >758:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7ED cinit CODE >759:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7EE cinit CODE >760:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7EF cinit CODE >761:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7F0 cinit CODE >762:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7F1 cinit CODE >763:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7F6 cinit CODE >767:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7F7 cinit CODE >768:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7F8 cinit CODE >769:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7F9 cinit CODE >770:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7FA cinit CODE >771:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7FB cinit CODE >772:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7FC cinit CODE >778:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7FC cinit CODE >780:C:\Users\Louda\AppData\Local\Temp\s95c.s
+7FD cinit CODE >781:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4BE text12 CODE >3:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4BE text12 CODE >5:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4C2 text12 CODE >6:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4C5 text12 CODE >7:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4C6 text12 CODE >8:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4C8 text12 CODE >9:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4C9 text12 CODE >10:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4CA text12 CODE >11:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+491 text11 CODE >4:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+491 text11 CODE >5:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+496 text11 CODE >6:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+4CB text10 CODE >13:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4CB text10 CODE >15:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4D7 text10 CODE >16:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4A9 text9 CODE >48:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4A9 text9 CODE >51:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4AE text9 CODE >52:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4B1 text9 CODE >53:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4B2 text9 CODE >54:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4FB text8 CODE >66:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4FB text8 CODE >69:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+500 text8 CODE >70:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+503 text8 CODE >71:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+508 text8 CODE >72:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+50E text8 CODE >73:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+513 text8 CODE >74:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+514 text8 CODE >75:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+497 text7 CODE >18:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+497 text7 CODE >21:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+49C text7 CODE >22:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+49F text7 CODE >23:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4A0 text6 CODE >25:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4A0 text6 CODE >28:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4A5 text6 CODE >29:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4A8 text6 CODE >30:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4D8 text5 CODE >57:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4D9 text5 CODE >60:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4DE text5 CODE >61:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4E2 text5 CODE >62:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4E7 text5 CODE >63:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+4E7 text5 CODE >64:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\I2C.c
+533 text4 CODE >20:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+534 text4 CODE >24:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+539 text4 CODE >25:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+53E text4 CODE >26:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+544 text4 CODE >27:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+54A text4 CODE >28:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+54F text4 CODE >29:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+554 text4 CODE >30:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+55A text4 CODE >31:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+562 text4 CODE >32:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+567 text4 CODE >33:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+568 text4 CODE >35:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+515 text3 CODE >10:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+516 text3 CODE >12:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+51B text3 CODE >13:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+521 text3 CODE >14:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+527 text3 CODE >15:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+52D text3 CODE >16:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+532 text3 CODE >17:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\External_E2PROM.c
+5C2 text2 CODE >5:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5C2 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5C3 text2 CODE >14:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5C7 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5CC text2 CODE >16:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5CE text2 CODE >18:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5D2 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5D7 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5DB text2 CODE >22:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5DD text2 CODE >23:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5E3 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5E5 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5E6 text2 CODE >26:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5ED text2 CODE >27:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5F1 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5F5 text2 CODE >30:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+5FC text2 CODE >31:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+606 text2 CODE >32:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+60C text2 CODE >33:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+60D text2 CODE >35:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+614 text2 CODE >36:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+61A text2 CODE >38:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+61F text2 CODE >39:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+624 text2 CODE >40:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+628 text2 CODE >41:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+569 text1 CODE >5:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+569 text1 CODE >12:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+56A text1 CODE >13:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+56E text1 CODE >14:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+573 text1 CODE >15:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+575 text1 CODE >17:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+579 text1 CODE >18:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+57E text1 CODE >19:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+584 text1 CODE >20:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+586 text1 CODE >21:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+587 text1 CODE >22:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+58E text1 CODE >23:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+592 text1 CODE >21:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+596 text1 CODE >26:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5A0 text1 CODE >27:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5A6 text1 CODE >28:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5AD text1 CODE >29:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5B3 text1 CODE >31:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5B8 text1 CODE >32:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5BD text1 CODE >33:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+5C1 text1 CODE >34:C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+629 maintext CODE >41:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+629 maintext CODE >44:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+62C maintext CODE >45:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+62D maintext CODE >46:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+630 maintext CODE >47:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+631 maintext CODE >48:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+632 maintext CODE >49:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+633 maintext CODE >50:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+635 maintext CODE >52:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+638 maintext CODE >53:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+639 maintext CODE >57:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+63E maintext CODE >61:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+64A maintext CODE >64:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+650 maintext CODE >65:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+65D maintext CODE >66:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+661 maintext CODE >68:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+670 maintext CODE >69:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+674 maintext CODE >70:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+675 maintext CODE >71:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+676 maintext CODE >72:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+677 maintext CODE >73:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+677 maintext CODE >76:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+679 maintext CODE >77:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+681 maintext CODE >81:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+68A maintext CODE >82:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+68E maintext CODE >83:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+690 maintext CODE >86:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+696 maintext CODE >87:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+69A maintext CODE >88:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+69B maintext CODE >91:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+6A1 maintext CODE >92:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+6A2 maintext CODE >95:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+6A6 maintext CODE >96:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+6AA maintext CODE >97:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+6B5 maintext CODE >98:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+6C3 maintext CODE >99:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+6D3 maintext CODE >102:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+6DA maintext CODE >104:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+6E8 maintext CODE >103:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+6EC maintext CODE >108:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+6FF maintext CODE >109:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+700 maintext CODE >110:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+701 maintext CODE >111:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+709 maintext CODE >112:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+725 maintext CODE >113:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+72A maintext CODE >119:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+740 maintext CODE >120:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+756 maintext CODE >121:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+76C maintext CODE >122:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+782 maintext CODE >125:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+783 maintext CODE >126:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+783 maintext CODE >127:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+784 maintext CODE >128:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+785 maintext CODE >129:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+786 maintext CODE >130:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+787 maintext CODE >131:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+78D maintext CODE >132:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+791 maintext CODE >133:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+792 maintext CODE >135:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+792 maintext CODE >136:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+793 maintext CODE >137:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+794 maintext CODE >138:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+795 maintext CODE >139:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+796 maintext CODE >140:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+79C maintext CODE >141:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7A0 maintext CODE >143:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7A1 maintext CODE >145:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7A1 maintext CODE >146:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7A2 maintext CODE >147:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7A3 maintext CODE >148:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7A4 maintext CODE >149:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7A5 maintext CODE >150:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7AB maintext CODE >151:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7AF maintext CODE >152:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7B0 maintext CODE >154:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7B0 maintext CODE >155:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7B1 maintext CODE >156:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7B2 maintext CODE >157:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7B3 maintext CODE >158:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7B4 maintext CODE >159:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7BA maintext CODE >160:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7BC maintext CODE >161:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7BD maintext CODE >162:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7D3 maintext CODE >165:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+7DC maintext CODE >166:F:\new journey\pic\A28_4_Digit_Key_Press_EEPROM.X\main.c
+4E8 inittext CODE >728:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4E8 inittext CODE >729:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4E9 inittext CODE >730:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4EA inittext CODE >731:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4EB inittext CODE >732:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4EC inittext CODE >739:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4EC inittext CODE >740:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4F1 inittext CODE >741:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4F2 inittext CODE >742:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4F3 inittext CODE >743:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4F4 inittext CODE >744:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4F5 inittext CODE >745:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4F6 inittext CODE >746:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4F7 inittext CODE >747:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4F8 inittext CODE >748:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4F9 inittext CODE >749:C:\Users\Louda\AppData\Local\Temp\s95c.s
+4FA inittext CODE >750:C:\Users\Louda\AppData\Local\Temp\s95c.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+___awdiv@counter 74 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 7A 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__size_of_External_EEPROM_Init 0 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__size_of_External_EEPROM_Read 0 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+External_EEPROM_Read@word_Address 71 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_External_EEPROM_Write A66 0 CODE 0 text3 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__end_of_I2C_Start 940 0 CODE 0 text7 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__end_of_I2C_Write 9D0 0 CODE 0 text5 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+_RCEN 48B 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_RSEN 489 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Louda\AppData\Local\Temp\s95c.o
+_main C52 0 CODE 0 maintext dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__size_of_I2C_Start 0 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__size_of_I2C_Write 0 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__end_of_External_EEPROM_Init 92E 0 CODE 0 text11 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__end_of_External_EEPROM_Read AD2 0 CODE 0 text4 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+start 0 0 CODE 0 init C:\Users\Louda\AppData\Local\Temp\s95c.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__size_of_I2C_NACK 0 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__size_of_I2C_Read 0 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__size_of_I2C_Stop 0 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__size_of_I2C_Wait 0 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_External_EEPROM_Write A2A 0 CODE 0 text3 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+_I2C_Start 92E 0 CODE 0 text7 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+_I2C_Write 9B0 0 CODE 0 text5 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+___awmod@sign 75 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Louda\AppData\Local\Temp\s95c.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Louda\AppData\Local\Temp\s95c.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Louda\AppData\Local\Temp\s95c.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Louda\AppData\Local\Temp\s95c.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Louda\AppData\Local\Temp\s95c.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Louda\AppData\Local\Temp\s95c.o
+wtemp0 7E 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+___awdiv@sign 75 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+External_EEPROM_Write@Data 72 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+main@Time_Counter 2B 0 BANK0 1 cstackBANK0 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+___awdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+External_EEPROM_Write@Device_Address 73 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_Minute_Counter 36 0 BANK0 1 bssBANK0 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_SSD4_counter 32 0 BANK0 1 bssBANK0 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_I2C_NACK 952 0 CODE 0 text9 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_I2C_Read 9F6 0 CODE 0 text8 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_I2C_Stop 940 0 CODE 0 text6 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_I2C_Wait 996 0 CODE 0 text10 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__end_of_I2C_NACK 966 0 CODE 0 text9 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__end_of_I2C_Read A2A 0 CODE 0 text8 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__end_of_I2C_Stop 952 0 CODE 0 text6 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__end_of_I2C_Wait 9B0 0 CODE 0 text10 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__end_of___awdiv C52 0 CODE 0 text2 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__end_of___awmod B84 0 CODE 0 text1 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\Louda\AppData\Local\Temp\s95c.o
+___stacklo 0 0 ABS 0 - C:\Users\Louda\AppData\Local\Temp\s95c.o
+_SSD2_counter 34 0 BANK0 1 bssBANK0 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+start_initialization FD0 0 CODE 0 cinit dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_TRISBbits 86 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_ACKSTAT 48E 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__pcstackBANK0 2B 0 BANK0 1 cstackBANK0 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_SSPADD 93 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_SSPBUF 13 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_SSPCON 14 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_TRISC3 43B 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_TRISC4 43C 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Louda\AppData\Local\Temp\s95c.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FD0 0 CODE 0 cinit -
+External_EEPROM_Read@temp 73 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Lstack 0 0 STACK 2 stack -
+__Linittext 0 0 ABS 0 inittext -
+External_EEPROM_Write@word_Address 71 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_PEN 48A 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_RA2 2A 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_RA3 2B 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_RA4 2C 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_RA5 2D 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_RB3 33 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_RB4 34 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_SEN 488 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_SSD 20 0 BANK0 1 dataBANK0 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__S0 800 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_External_EEPROM_Init 922 0 CODE 0 text11 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_External_EEPROM_Read A66 0 CODE 0 text4 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__size_of_External_EEPROM_Write 0 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+main@EEPROM_Value 31 0 BANK0 1 cstackBANK0 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Lintentry 0 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Louda\AppData\Local\Temp\s95c.o
+External_EEPROM_Read@Device_Address 72 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+_Seconds_Counter 37 0 BANK0 1 bssBANK0 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+___awmod@counter 74 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__ptext10 996 0 CODE 0 text10 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__ptext11 922 0 CODE 0 text11 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__ptext12 97C 0 CODE 0 text12 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+___awdiv B84 0 CODE 0 text2 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+___awmod AD2 0 CODE 0 text1 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__pmaintext C52 0 CODE 0 maintext dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__Hinittext 0 0 ABS 0 inittext -
+I2C_Read@Data 70 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+main@count 2D 0 BANK0 1 cstackBANK0 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__end_of_I2C_Master_Init 996 0 CODE 0 text12 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+init_fetch0 9D0 0 CODE 0 inittext dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+I2C_Write@Data 70 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 76 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+?___awdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+?___awmod 70 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+_SSD3_counter 33 0 BANK0 1 bssBANK0 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__ptext1 AD2 0 CODE 0 text1 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__ptext2 B84 0 CODE 0 text2 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__ptext3 A2A 0 CODE 0 text3 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__ptext4 A66 0 CODE 0 text4 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__ptext5 9B0 0 CODE 0 text5 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__ptext6 940 0 CODE 0 text6 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__ptext7 92E 0 CODE 0 text7 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__ptext8 9F6 0 CODE 0 text8 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__ptext9 952 0 CODE 0 text9 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_I2C_Master_Init 97C 0 CODE 0 text12 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+_SSD1_counter 35 0 BANK0 1 bssBANK0 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__pidataBANK0 966 0 CODE 0 idataBANK0 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_SSD_status 2A 0 BANK0 1 dataBANK0 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_SSPCON2 91 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_SSPSTAT 94 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Hend_init 6 0 CODE 0 end_init -
+init_ram0 9D8 0 CODE 0 inittext dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__end_of_main FD0 0 CODE 0 maintext dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_ACKDT 48D 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_ACKEN 48C 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization FD0 0 CODE 0 cinit dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__pbssBANK0 32 0 BANK0 1 bssBANK0 dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+__size_of_I2C_Master_Init 0 0 ABS 0 - dist/default/production\A28_4_Digit_Key_Press_EEPROM.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7E8 FD0 18 2
+text1 0 569 AD2 59 2
+text2 0 5C2 B84 67 2
+text3 0 515 A2A 1E 2
+text4 0 533 A66 36 2
+text5 0 4D8 9B0 10 2
+text6 0 4A0 940 9 2
+text7 0 497 92E 9 2
+text8 0 4FB 9F6 1A 2
+text9 0 4A9 952 A 2
+text10 0 4CB 996 D 2
+text11 0 491 922 6 2
+text12 0 4BE 97C D 2
+maintext 0 629 C52 1BF 2
+cstackCOMMON 1 70 70 A 1
+inittext 0 4E8 9D0 13 2
+reset_vec 0 0 0 3 2
+idataBANK0 0 4B3 966 B 2
+dataBANK0 1 20 20 18 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

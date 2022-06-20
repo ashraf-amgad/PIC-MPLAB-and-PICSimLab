@@ -1,0 +1,158 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"5 F:\new journey\pic\A27_4_Digit_key_Press_Counter.X\E2PROM.c
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+"22
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+"32 F:\new journey\pic\A27_4_Digit_key_Press_Counter.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"340 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S112 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"477
+[s S121 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S126 . 1 `S112 1 . 1 0 `S121 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES126  1 e 1 @11 ]
+"1325
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+[s S29 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1392
+[u S38 . 1 `S29 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES38  1 e 1 @134 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2288
+[v _EEDATA EEDATA `VEuc  1 e 1 @268 ]
+"2295
+[v _EEADR EEADR `VEuc  1 e 1 @269 ]
+[s S93 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"2331
+[u S100 . 1 `S93 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES100  1 e 1 @396 ]
+"2361
+[v _EECON2 EECON2 `VEuc  1 e 1 @397 ]
+"2662
+[v _RA2 RA2 `VEb  1 e 0 @42 ]
+"2665
+[v _RA3 RA3 `VEb  1 e 0 @43 ]
+"2668
+[v _RA4 RA4 `VEb  1 e 0 @44 ]
+"2671
+[v _RA5 RA5 `VEb  1 e 0 @45 ]
+"2677
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"2683
+[v _RB3 RB3 `VEb  1 e 0 @51 ]
+"7 F:\new journey\pic\A27_4_Digit_key_Press_Counter.X\main.c
+[v _Seconds_Counter Seconds_Counter `uc  1 e 1 0 ]
+"8
+[v _Minute_Counter Minute_Counter `uc  1 e 1 0 ]
+"9
+[v _SSD1_counter SSD1_counter `uc  1 e 1 0 ]
+"10
+[v _SSD2_counter SSD2_counter `uc  1 e 1 0 ]
+"11
+[v _SSD3_counter SSD3_counter `uc  1 e 1 0 ]
+"12
+[v _SSD4_counter SSD4_counter `uc  1 e 1 0 ]
+"13
+[v _SSD SSD `[10]uc  1 e 10 0 ]
+"19
+[v _SSD_status SSD_status `uc  1 e 1 0 ]
+"32
+[v _main main `(v  1 e 1 0 ]
+{
+"62
+[v main@count count `ul  1 a 4 2 ]
+"61
+[v main@Time_Counter Time_Counter `ui  1 a 2 0 ]
+"46
+[v main@EEPROM_Value EEPROM_Value `uc  1 a 1 6 ]
+"155
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 0 ]
+[v ___awdiv@dividend dividend `i  1 p 2 2 ]
+"41
+} 0
+"5 F:\new journey\pic\A27_4_Digit_key_Press_Counter.X\E2PROM.c
+[v _EEPROM_Write EEPROM_Write `(v  1 e 1 0 ]
+{
+[v EEPROM_Write@Address Address `uc  1 a 1 wreg ]
+[v EEPROM_Write@Address Address `uc  1 a 1 wreg ]
+[v EEPROM_Write@Data Data `uc  1 p 1 0 ]
+[v EEPROM_Write@Address Address `uc  1 a 1 1 ]
+"19
+} 0
+"22
+[v _EEPROM_Read EEPROM_Read `(uc  1 e 1 0 ]
+{
+[v EEPROM_Read@Address Address `uc  1 a 1 wreg ]
+"24
+[v EEPROM_Read@Data Data `uc  1 a 1 1 ]
+"22
+[v EEPROM_Read@Address Address `uc  1 a 1 wreg ]
+"25
+[v EEPROM_Read@Address Address `uc  1 a 1 0 ]
+"30
+} 0

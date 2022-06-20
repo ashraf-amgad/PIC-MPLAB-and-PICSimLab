@@ -1,0 +1,167 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"33 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"6 F:\new journey\pic\A20_10_Digit_Down_Counter_With_Preset.X\LCD.c
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"31
+[v _LCD_SendCMD LCD_SendCMD `(v  1 e 1 0 ]
+"74
+[v _LCD_DisChar LCD_DisChar `(v  1 e 1 0 ]
+"116
+[v _LCD_DisStr LCD_DisStr `(v  1 e 1 0 ]
+"170
+[v _LCD_GotoRC LCD_GotoRC `(v  1 e 1 0 ]
+"181
+[v _LCD_DisStrRC LCD_DisStrRC `(v  1 e 1 0 ]
+"17 F:\new journey\pic\A20_10_Digit_Down_Counter_With_Preset.X\main.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+"35
+[v _main main `(v  1 e 1 0 ]
+"340 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S39 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1392
+[u S48 . 1 `S39 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES48  1 e 1 @134 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+[s S109 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 PSPMODE 1 0 :1:4 
+`uc 1 IBOV 1 0 :1:5 
+`uc 1 OBF 1 0 :1:6 
+`uc 1 IBF 1 0 :1:7 
+]
+"1578
+[u S118 . 1 `S109 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES118  1 e 1 @137 ]
+"2569
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2599
+[v _INTE INTE `VEb  1 e 0 @92 ]
+"2602
+[v _INTEDG INTEDG `VEb  1 e 0 @1038 ]
+"2605
+[v _INTF INTF `VEb  1 e 0 @89 ]
+"2629
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"2683
+[v _RB3 RB3 `VEb  1 e 0 @51 ]
+"2686
+[v _RB4 RB4 `VEb  1 e 0 @52 ]
+"2776
+[v _RE1 RE1 `VEb  1 e 0 @73 ]
+"2779
+[v _RE2 RE2 `VEb  1 e 0 @74 ]
+"7 F:\new journey\pic\A20_10_Digit_Down_Counter_With_Preset.X\main.c
+[v _First_Row_Massage First_Row_Massage `[16]uc  1 e 16 0 ]
+"8
+[v _Second_Row_Massage Second_Row_Massage `[16]uc  1 e 16 0 ]
+"9
+[v _Counter Counter `[10]uc  1 e 10 0 ]
+"14
+[v _Start_Preset_Status Start_Preset_Status `uc  1 e 1 0 ]
+"15
+[v _Field_Offset Field_Offset `uc  1 e 1 0 ]
+"35
+[v _main main `(v  1 e 1 0 ]
+{
+"53
+[v main@i i `uc  1 a 1 9 ]
+"133
+} 0
+"33 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\strcmp.c
+[v _strcmp strcmp `(i  1 e 2 0 ]
+{
+[v strcmp@s1 s1 `*.4DCuc  1 a 1 wreg ]
+"35
+[v strcmp@r r `c  1 a 1 2 ]
+"33
+[v strcmp@s1 s1 `*.4DCuc  1 a 1 wreg ]
+[v strcmp@s2 s2 `*.24DCuc  1 p 1 6 ]
+[v strcmp@s1 s1 `*.4DCuc  1 a 1 3 ]
+"42
+} 0
+"6 F:\new journey\pic\A20_10_Digit_Down_Counter_With_Preset.X\LCD.c
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+"25
+} 0
+"181
+[v _LCD_DisStrRC LCD_DisStrRC `(v  1 e 1 0 ]
+{
+[v LCD_DisStrRC@str str `*.4uc  1 a 1 wreg ]
+[v LCD_DisStrRC@str str `*.4uc  1 a 1 wreg ]
+[v LCD_DisStrRC@row row `uc  1 p 1 4 ]
+[v LCD_DisStrRC@column column `uc  1 p 1 5 ]
+"183
+[v LCD_DisStrRC@str str `*.4uc  1 a 1 6 ]
+"185
+} 0
+"170
+[v _LCD_GotoRC LCD_GotoRC `(v  1 e 1 0 ]
+{
+[v LCD_GotoRC@row row `uc  1 a 1 wreg ]
+[v LCD_GotoRC@row row `uc  1 a 1 wreg ]
+[v LCD_GotoRC@column column `uc  1 p 1 1 ]
+"172
+[v LCD_GotoRC@row row `uc  1 a 1 2 ]
+"177
+} 0
+"31
+[v _LCD_SendCMD LCD_SendCMD `(v  1 e 1 0 ]
+{
+[v LCD_SendCMD@COMMAND COMMAND `uc  1 a 1 wreg ]
+[v LCD_SendCMD@COMMAND COMMAND `uc  1 a 1 wreg ]
+"34
+[v LCD_SendCMD@COMMAND COMMAND `uc  1 a 1 0 ]
+"70
+} 0
+"116
+[v _LCD_DisStr LCD_DisStr `(v  1 e 1 0 ]
+{
+[v LCD_DisStr@str str `*.4uc  1 a 1 wreg ]
+"118
+[v LCD_DisStr@i i `uc  1 a 1 3 ]
+"116
+[v LCD_DisStr@str str `*.4uc  1 a 1 wreg ]
+"118
+[v LCD_DisStr@str str `*.4uc  1 a 1 2 ]
+"126
+} 0
+"74
+[v _LCD_DisChar LCD_DisChar `(v  1 e 1 0 ]
+{
+[v LCD_DisChar@DATA DATA `uc  1 a 1 wreg ]
+[v LCD_DisChar@DATA DATA `uc  1 a 1 wreg ]
+"76
+[v LCD_DisChar@DATA DATA `uc  1 a 1 0 ]
+"111
+} 0
+"17 F:\new journey\pic\A20_10_Digit_Down_Counter_With_Preset.X\main.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"33
+} 0
